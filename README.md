@@ -23,7 +23,7 @@ Provavelmente não 🔥🔥
 
 ## 🛠 Tecnologias Utilizadas
 
-- [Godot Engine](https://godotengine.org/) (versão 4.0)
+- [Godot Engine](https://godotengine.org/) (versão 4.4)
 - Linguagem: **GDScript**
 - Sistema de IA: **GOAP**, **A***, **Steering Behaviors**, **State Machines**
 
