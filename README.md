@@ -13,8 +13,8 @@ Provavelmente não 🔥🔥
 
 
 <p align="center">
-  <img src="ReadmeAssets/cena1.png" width="500"/>
-  <img src="ReadmeAssets/MoonVitorGameplay.mp4.gif" width="500"/>
+  <img src="ReadmeAssets/cena1.png" width="450"/>
+  <img src="ReadmeAssets/MoonVitorGameplay.mp4.gif" width="450"/>
 </p>
 
 
