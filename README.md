@@ -5,7 +5,7 @@ Desenvolvimento de um jogo com o objetivo de aplicar diferentes técnicas de int
 
 Por Fim, na Segunda cena, existe uma BossFight com o MOONVITOR, inimigo final do jogo, formado por fotos que tirei de um amigo, ele é controlado por GOAP e A* de modo que possa procurar a melhor rota entre suas ações (Ataque com as Mãos, Ataque com Estrelas, Curar, e Cabeçada Teleguida) para atingir seu objetivo com o menor custo, a depender do estado do mundo (açoes do jogador) você tem o que é preciso para derrota-lo?! 🕹️🕹️
 
-Provavelmente não 🔥🔥
+Provavelmente não!! 🔥🔥
 
 ---
 
