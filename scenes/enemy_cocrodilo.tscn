@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://dehxgwbdyn1du"]
+
+[ext_resource type="Script" uid="uid://dy52136anc3vc" path="res://scripts/inimigos/enemy_cocrodilo.gd" id="1_nifhn"]
+[ext_resource type="Texture2D" uid="uid://dvinx5mtl126q" path="res://assets/personagens/inimigos/cocrodilo/Cocrodilo Animado1.png" id="1_qxeqj"]
+[ext_resource type="Texture2D" uid="uid://d2t6yggygm261" path="res://assets/personagens/inimigos/cocrodilo/Cocrodilo Animado2.png" id="2_ttq5f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s6irv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qxeqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ttq5f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjvi5"]
+height = 44.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u721b"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ghu5c"]
+radius = 14.0
+height = 70.0
+
+[node name="enemyCocrodilo" type="CharacterBody2D"]
+light_mask = 0
+position = Vector2(0, 10)
+collision_layer = 4
+script = ExtResource("1_nifhn")
+
+[node name="animCocrodilo" type="AnimatedSprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_s6irv")
+frame = 1
+frame_progress = 0.936704
+
+[node name="colisaoCocrodilo" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -13)
+shape = SubResource("CapsuleShape2D_pjvi5")
+
+[node name="cocrodiloAttackArea" type="Area2D" parent="."]
+
+[node name="attackTimer" type="Timer" parent="cocrodiloAttackArea"]
+wait_time = 3.0
+one_shot = true
+
+[node name="colisaoAtaqueCocrodilo" type="CollisionShape2D" parent="cocrodiloAttackArea"]
+position = Vector2(0, -31)
+shape = SubResource("CircleShape2D_u721b")
+
+[node name="hitboxCocrodilo" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitboxCocrodilo"]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_ghu5c")
